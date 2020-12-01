@@ -1,0 +1,82 @@
+// Color
+$background: #f7f9fe;
+$green: #18f0ae;
+$blue: #263d83;
+$gray: #f2f3f6;
+
+// Media Queries
+$med-screen: 768px;
+$lg-screen: 992px;
+$xl-screen: 1200px;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $background;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #001f3f;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.font--big {
+  font-size: 3rem;
+}
+
+.font--med {
+  font-size: 2.25rem;
+}
+
+.font--small {
+  font-size: 1.25rem;
+}
+
+.highlight-container,
+.highlight {
+  position: relative;
+}
+.highlight-container {
+  display: inline-block;
+  &:before,
+  &:after {
+    content: " ";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+  }
+  &:before {
+    background: rgba(234, 221, 6, 0.9);
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+  }
+  &:after {
+    background: rgba(234, 210, 6, 0.6);
+    top: 3px;
+    right: -2px;
+  }
+  .highlight {
+    color: #333;
+    z-index: 2;
+  }
+}

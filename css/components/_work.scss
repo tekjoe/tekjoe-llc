@@ -1,0 +1,27 @@
+.work__grid {
+  grid-column: 2/-2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  .project {
+    grid-column: 1/-1;
+    margin-bottom: 3rem;
+    &__image {
+      padding: 1rem;
+      background: linear-gradient(45deg, #ff5458 0%, #ffc1bd 50%, #ffd123 100%);
+      height: 300px;
+      margin-bottom: 1rem;
+      img {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+    &__body {
+      h2,
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

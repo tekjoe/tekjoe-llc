@@ -1,0 +1,22 @@
+.post {
+  grid-column: 2/-2;
+  margin: 4rem 0;
+  &__title {
+    font-size: 3rem;
+  }
+  &__body {
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  .byline {
+    margin-bottom: 2rem;
+  }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  word-wrap: normal;
+  margin: 1rem 0;
+  border-radius: 5px;
+}
